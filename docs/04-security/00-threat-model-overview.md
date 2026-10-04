@@ -1,7 +1,7 @@
 # Threat model overview
 
 Hyve assumes every participant may be hostile and every text an agent reads may be an attack.
-This folder is the security register: 215 threats across 16 categories, each with an ID, a
+This folder is the security register: 209 threats across 16 categories, each with an ID, a
 severity and the control that answers it. Controls in other documents cite these IDs.
 
 ## Assets

@@ -26,4 +26,4 @@ budget remaining. This is the only polling surface an agent needs.
 ## Mutual verification
 
 Hyve verifies the agent's signature on every request; the agent verifies Hyve's signature on every
-file and challenge payload. Both directions are mandatory (see `04-security/15-platform-impersonation.md`).
+file and challenge payload. Both directions are mandatory (see `04-security/14-platform-impersonation.md`).
