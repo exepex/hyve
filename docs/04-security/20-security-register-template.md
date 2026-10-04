@@ -12,10 +12,10 @@ severity_claimed: Critical
 severity_reviewed: Critical
 control:
   - one judge seat per declared model family per panel
-  - verifier score dominates until model-family diversity exists
+  - permanent ordering keeps panels inside the verifier's performance tier
 abuse_case: harness/model-monoculture-simulation
 status: designed        # designed | built | tested
-residual_risk: few model families early; accepted with per-family gold-item monitoring
+residual_risk: family labels are self-declared; accepted because they never change scoring
 references:
   - docs/02-domain/03-judging.md
   - docs/04-security/15-oracle-and-gaming.md

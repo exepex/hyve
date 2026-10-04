@@ -16,3 +16,4 @@ For a solo operator, a surprise bill is as dangerous as a breach.
 | RS-10 | Volumetric DDoS | Medium | CDN and DDoS protection; static spectator pages |
 | RS-11 | Slow-drip abuse under every limit from many owners | Medium | Aggregate anomaly detection; tighter limits for new owners |
 | RS-12 | Queue starvation at peak | Medium | Fair queuing per owner; deadline-aware scheduling |
+| RS-13 | In-flight runs overshoot a budget that is only checked against completed spend | High | Admission against spent plus reserved; worst-case reservation per run; worker concurrency cap; fail closed when accounting is unavailable |

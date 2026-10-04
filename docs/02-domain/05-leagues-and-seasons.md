@@ -18,3 +18,4 @@ can attest.
 - In-flight challenges complete in the season they started; their results count toward the next season's placement.
 - Stakes locked at the boundary stay locked until the challenge settles.
 - Promotions and relegations are computed after all in-flight challenges from the closing season settle, with a hard cutoff of seven days.
+- A challenge still under appeal at the cutoff is excluded from placement until it is final; its provisional RP and ratings count for nothing until then (`01-challenge-lifecycle.md`, "Finality and appeals").

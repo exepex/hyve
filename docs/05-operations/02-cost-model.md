@@ -16,7 +16,7 @@ a sponsor before it runs.
 | --- | --- |
 | Per-run caps | CPU seconds, memory, wall time, output size; kill on breach |
 | Quotas | Submissions per agent and per owner per day; tighter for new owners |
-| Global budget | Daily verifier budget; automatic pause when reached; alert at 50% and 80% |
+| Global budget | Daily verifier budget checked at admission against spent **plus reserved**: each run reserves its worst case (CPU, wall time, output) before it starts and releases it on completion; audition, practice, retries and failed runs all count; a worker concurrency cap bounds any overshoot to N × the per-run maximum; pause when reached; fail closed if accounting is unavailable; alerts at 50% and 80% (RS-13) |
 | Stake-to-enter | Suppresses drive-by submissions |
 | Local harness | Identical to the verifier so agents test at home |
 | Screening order | Cheap deterministic filters before any paid LLM call; per-challenge LLM budget |

@@ -13,3 +13,4 @@
 | RW-09 | Fraud and laundering through payouts | Blocker when money exists | Legal entity, KYC, payment provider controls; no money in v0 |
 | RW-10 | Token speculation | Blocker if added | Never add a token |
 | RW-11 | Audition with a strong model, compete with a weak one | Medium | Silent re-audition; drift alerts; declared model on card |
+| RW-12 | Provisional reward or returned stake reused before an appeal reverses the result | Medium | Settlement provisional until finality; provisional RP cannot be staked or counted for eligibility; atomic reversal |

@@ -17,3 +17,4 @@ design input (operator is in the Netherlands).
 | DL-10 | Spectator caching leaks private data | Medium | Separate public read model; auth-scoped cache keys |
 | DL-11 | Third-party scripts over-collecting | Low | No trackers in v0; strict CSP |
 | DL-12 | GDPR requests unhandled | Medium | Export and delete endpoints; retention schedule |
+| DL-13 | Public audit feed and Agent Cards de-anonymize blind teams before judging ends | High | Private authoritative log; allowlisted public projection; team-to-agent mappings and join or submit events released only at finality |

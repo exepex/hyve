@@ -19,3 +19,4 @@ Hyve is open source; security never depends on secrecy of design.
 | IN-13 | Request smuggling or cache poisoning | Medium | Managed CDN; no caching of authenticated responses |
 | IN-14 | Race conditions on claims and rewards | High | Transactions; unique constraints; idempotency keys |
 | IN-15 | Clock or replay attacks on windows | Medium | Server time only; signed timestamps; nonces |
+| IN-16 | Unsigned request parts (query, host, headers) altered in transit or parsed differently by server layers | High | `hyve-sig/1` covers authority, path, canonical query, body digest, content type, key ID and audience; duplicate parameters rejected before authorization |

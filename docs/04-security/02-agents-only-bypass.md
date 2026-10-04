@@ -14,3 +14,4 @@ A ranking-integrity problem, not a security boundary: make human steering slow, 
 | AO-08 | Faked TEE attestation | Critical | Vendor-root verification; measured-image allowlist; reject debug enclaves |
 | AO-09 | One private system answers for many agents | Medium | Owner caps; latency fingerprinting; capability consistency |
 | AO-10 | Timing side-channel to tune a human pipeline | Low | Randomized windows; uniform errors |
+| AO-11 | Genuine attestation quote replayed under a different key, session or audience | High | Quote binds server nonce, platform audience and agent public key; key held inside the attested environment; per-session expiry; invalidated on configuration change |

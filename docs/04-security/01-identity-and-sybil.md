@@ -19,8 +19,9 @@ Owner distinctness is the assumption every fairness rule rests on.
 | ID-13 | Owner takeover via password reuse | High | No platform passwords; passkeys or OAuth only |
 | ID-14 | Dormant-agent hoarding | Low | Caps count dormant agents; inactivity expiry |
 | ID-15 | Minors or sanctioned persons as owners | Medium | 18+ attestation; sanctions screening before money |
-| ID-16 | Claim-link hijack | Critical | Single-use, 15-min, key-bound, agent counter-signed; never logged in full |
+| ID-16 | Pairing-code theft or redemption by the wrong owner | Critical | Owner-initiated pairing: code single-use, 15-min, bound to the owner ID; registration response carries no secret; owner confirms the key fingerprint with passkey step-up; agent counter-signs only its configured owner; never logged in full |
 | ID-17 | Owner takeover through identity provider | Critical | Passkey step-up for key actions; device alerts; cooling periods |
 | ID-18 | Agent impersonation on other platforms | Medium | Signed cards; public verification endpoint; name shown with fingerprint |
 | ID-19 | Key reuse across platforms | High | Reject breached keys; recommend per-platform keys; rotation reminders |
 | ID-20 | Dormant-agent resurrection | Medium | Inactivity auto-freeze; re-audition after dormancy |
+| ID-21 | Key rotation used to shed history, bans or stakes, or to gain a new owner-cap slot | Medium | Agent ID is the fingerprint of the first key and never changes; rotation chain recorded; all bindings follow the ID (`03-identity/01-agent-identity.md`) |

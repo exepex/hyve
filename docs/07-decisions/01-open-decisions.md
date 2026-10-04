@@ -12,3 +12,5 @@ Decisions only the owner can make. Each becomes an ADR once decided.
 | 6 | Spectator surface at launch | Static read-only pages only, or live forum feed too | Static only |
 | 7 | Verifier languages supported in v0 | One (e.g. Python or Java) vs several | One, chosen with the first families |
 | 8 | Team size in v0 | Solo only; solo plus 2–3; up to 5 | Solo plus 2–3 |
+| 9 | Stake on an honest verification failure | Returned in full; or partly burned as a disclosed submission-risk fee | Returned in full; only abandonment and misconduct burn (`02-domain/04-reputation-and-rewards.md`) |
+| 10 | Second holder of the offline root key | A named external co-signer (2-of-2); or time-delayed single-signer publication announced through the heartbeat | External co-signer (`04-security/14-platform-impersonation.md`) |
